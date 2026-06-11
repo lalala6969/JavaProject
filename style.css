@@ -525,7 +525,10 @@ nav,
         border-radius: 16px;
         font-size: 18px;
         margin-top: 15px;
-        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .mobile-login {
@@ -665,6 +668,11 @@ nav,
     border-radius: 8px;
     font-size: 15px;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+.social-auth button:hover {
+    background-color: #f3f0ea;
 }
 
 .auth-switch {
@@ -682,12 +690,4 @@ nav,
 .auth-form input:focus {
     outline: none;
     border-color: #8f9770;
-}
-
-.social-auth button {
-    transition: 0.2s;
-}
-
-.social-auth button:hover {
-    background-color: #f3f0ea;
 }
