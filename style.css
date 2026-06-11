@@ -82,6 +82,10 @@ nav a:hover {
     border-radius: 12px;
     font-size: 16px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-button {
@@ -511,6 +515,8 @@ nav,
         font-size: 36px;
         cursor: pointer;
         margin-bottom: 30px;
+        width: auto;
+        padding: 0;
     }
 
     .mobile-login,
@@ -529,8 +535,159 @@ nav,
     }
 
     .mobile-register {
-        background-color: #8f9770;
-        border: none;
-        color: white;
+    background-color: #8f9770;
+    border: none;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
+}
+
+.auth-page {
+    min-height: 100vh;
+    background-color: #f6f3ef;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 16px;
+}
+
+.auth-card {
+    width: 100%;
+    max-width: 420px;
+    background-color: white;
+    border-radius: 28px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 28px 22px;
+    box-sizing: border-box;
+}
+
+.auth-card h1 {
+    font-size: 32px;
+    text-align: center;
+    max-width: 340px;
+    margin: 0 auto 12px;
+    line-height: 1.3;
+}
+
+.auth-subtitle {
+    text-align: center;
+    color: #0c4a52;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 28px;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.auth-form label {
+    font-weight: 700;
+    color: #0c4a52;
+    font-size: 16px;
+}
+
+.auth-form label span {
+    font-weight: 400;
+}
+
+.auth-form input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    padding: 18px;
+    border-radius: 10px;
+    border: 1px solid #d6d1c7;
+    font-size: 16px;
+    background-color: #faf8f5;
+}
+
+.checkbox-label {
+    display: flex;
+    gap: 12px;
+    font-weight: 400 !important;
+    line-height: 1.4;
+}
+
+.checkbox-label input {
+    width: 22px;
+    height: 22px;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+.auth-main-btn {
+    background-color: #8f9770;
+    color: white;
+    border: none;
+    padding: 22px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin: 28px 0;
+}
+
+.divider span {
+    height: 1px;
+    background-color: #ddd;
+    flex: 1;
+}
+
+.divider p {
+    margin: 0;
+    font-weight: 700;
+    color: #0c4a52;
+}
+
+.social-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-auth button {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.auth-switch {
+    text-align: center;
+    margin-top: 28px;
+    color: #0c4a52;
+}
+
+.auth-switch a {
+    color: #e97852;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.auth-form input:focus {
+    outline: none;
+    border-color: #8f9770;
+}
+
+.social-auth button {
+    transition: 0.2s;
+}
+
+.social-auth button:hover {
+    background-color: #f3f0ea;
 }
