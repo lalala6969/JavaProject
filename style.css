@@ -691,3 +691,11 @@ nav,
     outline: none;
     border-color: #8f9770;
 }
+
+
+.forgot-password {
+    color: #e97852;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: -8px;
+}
